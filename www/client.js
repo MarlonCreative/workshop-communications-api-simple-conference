@@ -4,8 +4,7 @@ const cities = ['Seattle', 'Vancouver', 'Portland', 'Tokyo', 'Berlin', 'Palermo'
 let randomName = cities[Math.floor(Math.random() * cities.length)];
 
 // We'll pulls some images that have been named after cities... {Money Heist} and replace our city name in URL and add some cloudinary transformations.
-let imagePlaceholder = `https://res.cloudinary.com/dolby-io/image/upload/e_art:red_rock/ar_1:1,c_fill,g_auto,r_max,w_50/v1634690310/dolby-hackathon/cities/${randomName}.png`
-
+let imagePlaceholder = 'https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/15022/thumb_unnamed.jpg'
 /**  Update varibles when form input changes */
 function updateNameValue(e) {
   randomName = e.target.value;
@@ -59,7 +58,7 @@ async function refreshToken() {
 
 /**  Create the participantInfo object and open the session with the object  */
 async function initializeConferenceSession() {
-  let participantInfo = { name: randomName, avatarUrl: imagePlaceholder, externalId: randomName }
+  let participantInfo = { name: 'Marlon', avatarUrl: imagePlaceholder, externalId: 'Marlon' }
   try {
     // Open a session for the user
     await VoxeetSDK.session.open(participantInfo);
