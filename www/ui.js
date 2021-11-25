@@ -18,7 +18,7 @@ const initUI = () => {
   showPlayer.style = "";
 
  // Update the login message with the name of the user
- nameMessage.innerHTML = `You are logged in as ${randomName}`;
+ nameMessage.innerHTML = `You are logged in as ${'Marlon'}`;
  // nameInput.value = randomName;
  joinButton.disabled = false;
 
