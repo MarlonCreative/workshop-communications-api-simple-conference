@@ -150,7 +150,7 @@ html {
   }
 
   body {
-      background-image: url("looking-glass-logo.png");
+      background-image: url("./looking-glass-logo.png");
       background-repeat: no-repeat;
     
      /* background: #eee;*/
